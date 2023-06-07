@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS e JS -->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <!-- Font Orbitron do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Crônimetro Digital</title>
 </head>
 <body>
-    
+        <div class="container">
+            <h1>Cronômetro Js</h1>
+            <div class="timer">
+                <div class="time" id="minutes">00</div>
+                <div class="separator">:</div>
+                <div class="time" id="seconds">00</div>
+                <div class="separator">:</div>
+                <div class="time" id="miliseconds">000</div>
+            </div>
+            <div class="btns">
+                <button class="btn" id="starBtn">Iniciar</button>
+                <button class="btn" id="pauseBtn">Pausar</button>
+                <button class="btn" id="resumeBtn">Continuar</button>
+                <button class="btn" id="resetBtn">Reiniciar</button>
+            </div>
+        </div>
 </body>
 </html>

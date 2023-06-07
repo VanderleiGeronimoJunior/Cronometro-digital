@@ -1,0 +1,112 @@
+*{
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ligth-color-time: #172953;
+    --ligth-color-h1: #175cff;
+    --ligth-color-container: #f1f1f1;
+    --ligth-color-separator-miliseconds: #525763;
+}
+
+body{
+    background-color: #000;
+	color: #fff;    
+}
+
+
+
+.container{
+    width: 700px;	
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;    
+    margin: 10rem auto;
+    gap: 2rem;    
+    border-radius: 20px;
+    background-color: #333E43;
+}
+
+.ligth{
+    color: var(--ligth-color-container);
+}
+
+.container h1{
+    font-size: 2.5  rem;    
+    color: #175cff;
+}
+
+.ligth-h1{
+    color: var(--ligth-color-h1);    
+}
+
+
+.timer{
+    font-size: 70px;
+    /* font-weight: bold; */
+    text-align: center;
+    display: flex;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00fd32;
+    margin-right: 10px;
+    min-width: 90px;
+}
+.ligth-time{
+    
+    color: var(--ligth-color-time);
+}
+
+.separator{
+    padding: 0 10px;
+    /* color: #00fd04; */
+    color: var(--ligth-color-container);
+}
+
+.ligth-separator{
+    color: var(--ligth-color-separator-miliseconds);
+}
+
+#miliseconds{
+    font-size: 30px;
+    color: #00fd32;
+}
+
+#ligth-miliseconds{
+    color: var(--ligth-color-separator-miliseconds);
+}
+
+.btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+
+#starBtn{
+    background-color: #175cff;
+    color: #fff;
+}
+
+#pauseBtn,
+#resumeBtn{
+    display: none;
+}

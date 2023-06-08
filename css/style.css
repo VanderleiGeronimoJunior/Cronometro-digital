@@ -17,6 +17,7 @@ body{
     color: #fff;    
     /* background-color: #000; */
     background-color: #1c262f;
+    /* overflow: hidden; */
 }
 
 
@@ -91,7 +92,7 @@ body{
 
 .btns{
     display: flex;
-    gap: 1rem;
+    gap: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -108,24 +109,19 @@ body{
     transform: scale(1.1);
 }
 
-.data {
-    display: flex;
-    flex-direction: column;
-}
-
-#tempo {
+#tempo {    
     width: 690px;
     font-size: 1.2rem;
     background-color: #1c262f;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin: 1rem;
     padding: 1rem;
     /* display: none; */
 
-    border-radius: 15px;    
+    border-radius: 15px;   
+     
 }
+
+
 
 /* #tempo{
     font-size: 15px;
@@ -141,17 +137,31 @@ body{
 
 #starBtn{
     background-color: #175cff;
-    color: #fff;
+    color: #f1f1f1;
+    padding: 0.3rem 3rem;
 }
 
 #lapBtn {
     background-color: #00fd32;
     color: #000;
     font-size: 35px;
+    padding: 0.3rem 3rem;
+
 }
 
 #pauseBtn{
-    background-color: #F29E4C;
+    background-color: #993333;
+    color: #f1f1f1;
+}
+
+#resetBtn{
+    background-color: #f74d4d;
+    color: #f1f1f1;
+}
+
+#resumeBtn{
+    background-color: #ff6d19;
+    color: #f1f1f1;
 }
 
 #pauseBtn,

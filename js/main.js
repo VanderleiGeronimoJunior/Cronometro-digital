@@ -12,7 +12,8 @@ const lapBtn = document.querySelector("#lapBtn");
 
 // lista
 const tempo = document.querySelector("#tempo");
-// const data = document.querySelector("#data");
+
+tempo.style.display = "none";
 
 let minutes = 0;
 let seconds = 0;
@@ -50,6 +51,8 @@ function startTimer(){
             minutesEL.textContent = formatTime(minutes);
             secondsEL.textContent = formatTime(seconds);
             milisecondsEL.textContent = formatTime(miliseconds);
+
+            
         }
     },10);
 
@@ -65,8 +68,8 @@ function pauseTimer(){
 
 function resumeTimer(){
     isPaused = false;
-    pauseBtn.style.display = "block";
     resumeBtn.style.display = "none";    
+    pauseBtn.style.display = "block";
 }
 
 function resetTimer(){
@@ -84,6 +87,7 @@ function resetTimer(){
     starBtn.style.display = "block";
     pauseBtn.style.display = "none";
     resumeBtn.style.display = "none";
+    tempo.style.display = "none";
 }
 
 function formatTime(time){
@@ -104,6 +108,8 @@ function logTime() {
     separator.value;
     tempo.style.display = "block";
 
+
+    
     let lista  = document.getElementById("tempo").innerHTML;
     lista = lista + `<li>
     <p> volta : </p>
@@ -120,7 +126,8 @@ function logTime() {
     
     <br>`;
     
-    tempo.innerHTML = lista; 
+    tempo.innerHTML = lista;    
+    
     
     clearInterval(interval);
     minutes = 0;
@@ -128,6 +135,6 @@ function logTime() {
     miliseconds = 0;
 
     startTimer();
-
+    
 }
 

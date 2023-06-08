@@ -1,12 +1,18 @@
 const minutesEL = document.querySelector("#minutes");
 const secondsEL = document.querySelector("#seconds");
 const milisecondsEL = document.querySelector("#miliseconds");
+const separator = document.querySelector(".separator");
+
+// botões
 const starBtn = document.querySelector("#starBtn");
 const pauseBtn = document.querySelector("#pauseBtn");
 const resumeBtn = document.querySelector("#resumeBtn");
 const resetBtn = document.querySelector("#resetBtn");
-const logTimeBtn = document.querySelector("#logTimeBtn");
-const separator = document.querySelector(".separator");
+const lapBtn = document.querySelector("#lapBtn");
+
+// lista
+const tempo = document.querySelector("#tempo");
+// const data = document.querySelector("#data");
 
 let minutes = 0;
 let seconds = 0;
@@ -15,14 +21,15 @@ let isPaused = false; // começa em pause
 let interval;
 
 
-
 // temporizador
 
 starBtn.addEventListener("click", startTimer);
 pauseBtn.addEventListener("click", pauseTimer);
 resumeBtn.addEventListener("click", resumeTimer);
 resetBtn.addEventListener("click", resetTimer);
-logTimeBtn.addEventListener("click", logTime);
+lapBtn.addEventListener("click", logTime);
+
+
 
 function startTimer(){
     interval = setInterval(() => {
@@ -42,7 +49,7 @@ function startTimer(){
 
             minutesEL.textContent = formatTime(minutes);
             secondsEL.textContent = formatTime(seconds);
-            milisecondsEL.textContent = formatMiliseconds(miliseconds);
+            milisecondsEL.textContent = formatTime(miliseconds);
         }
     },10);
 
@@ -72,6 +79,7 @@ function resetTimer(){
     minutesEL.textContent = "00";
     secondsEL.textContent = "00";
     milisecondsEL.textContent = "000";
+    tempo.innerHTML = "";
 
     starBtn.style.display = "block";
     pauseBtn.style.display = "none";
@@ -82,9 +90,11 @@ function formatTime(time){
     return time < 10 ? `0${time}`: time;
 };
 
+
 function formatMiliseconds(time){
     return time < 100 ? `${time}`.padStart(3, "0") : time;
 }
+
 
 
 function logTime() {
@@ -92,19 +102,32 @@ function logTime() {
     secondsEL.value;
     milisecondsEL.value;
     separator.value;
+    tempo.style.display = "block";
 
     let lista  = document.getElementById("tempo").innerHTML;
-    lista = lista + `
+    lista = lista + `<li>
     <p> volta : </p>
+
+
 
     <span>
     ${minutesEL.innerHTML}  ${separator.innerHTML}  ${secondsEL.innerHTML}  ${separator.innerHTML} 
     ${milisecondsEL.innerHTML}
     </span>
     
-    `;
+    </li>
+    <hr>
     
-    document.getElementById("tempo").innerHTML = lista;
+    <br>`;
+    
+    tempo.innerHTML = lista; 
+    
+    clearInterval(interval);
+    minutes = 0;
+    seconds = 0;
+    miliseconds = 0;
+
+    startTimer();
 
 }
 

@@ -13,23 +13,27 @@
 }
 
 body{
-    background-color: #000;
-	color: #fff;    
+    color: #fff;    
+    /* background-color: #000; */
+    background-color: #1c262f;
 }
 
 
 
 .container{
     width: 700px;	
-    height: 400px;
+    height: auto;
+    overflow:hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;    
     margin: 10rem auto;
-    gap: 2rem;    
+    gap: 2rem;
+    border: 1px solid #333E43;
     border-radius: 20px;
-    background-color: #333E43;
+    /* background-color: #333E43; */
+    background-color: #2d3740;
 }
 
 .ligth{
@@ -93,6 +97,7 @@ body{
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
+    border: none;
     border-radius: 30px;
     cursor: pointer;
     transition: all .2s ease-in-out;
@@ -101,9 +106,46 @@ body{
     transform: scale(1.1);
 }
 
+.data {
+    width: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+.data #tempo {
+    background-color: #1c262f;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+
+    border-radius: 20px;
+    /* border: 1px solid #fff; */
+}
+
+/* #tempo{
+    font-size: 15px;
+    background-color: #1c262f;
+    color: #f1f1f1;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.8rem;
+    flex-direction: column;
+} */
+
+
 #starBtn{
     background-color: #175cff;
     color: #fff;
+}
+
+#logTimeBtn {
+    background-color: #00fd32;
+    color: #000;
+    font-size: 35px;
 }
 
 #pauseBtn,

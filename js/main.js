@@ -5,6 +5,8 @@ const starBtn = document.querySelector("#starBtn");
 const pauseBtn = document.querySelector("#pauseBtn");
 const resumeBtn = document.querySelector("#resumeBtn");
 const resetBtn = document.querySelector("#resetBtn");
+const logTimeBtn = document.querySelector("#logTimeBtn");
+const separator = document.querySelector(".separator");
 
 let minutes = 0;
 let seconds = 0;
@@ -12,12 +14,15 @@ let miliseconds = 0;
 let isPaused = false; // começa em pause
 let interval;
 
+
+
 // temporizador
 
 starBtn.addEventListener("click", startTimer);
 pauseBtn.addEventListener("click", pauseTimer);
 resumeBtn.addEventListener("click", resumeTimer);
 resetBtn.addEventListener("click", resetTimer);
+logTimeBtn.addEventListener("click", logTime);
 
 function startTimer(){
     interval = setInterval(() => {
@@ -79,5 +84,27 @@ function formatTime(time){
 
 function formatMiliseconds(time){
     return time < 100 ? `${time}`.padStart(3, "0") : time;
+}
+
+
+function logTime() {
+    minutesEL.value;
+    secondsEL.value;
+    milisecondsEL.value;
+    separator.value;
+
+    let lista  = document.getElementById("tempo").innerHTML;
+    lista = lista + `
+    <p> volta : </p>
+
+    <span>
+    ${minutesEL.innerHTML}  ${separator.innerHTML}  ${secondsEL.innerHTML}  ${separator.innerHTML} 
+    ${milisecondsEL.innerHTML}
+    </span>
+    
+    `;
+    
+    document.getElementById("tempo").innerHTML = lista;
+
 }
 

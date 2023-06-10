@@ -50,6 +50,26 @@ HTML | CSS | JavaScript
 
 ![listaDeVoltas](./assets/)
 
+### Desenvolvimento contínuo
+
+- Quero continuar aprendendo sobre template strings
+- Quero continuar aprendendo sobre manipulação de DOM
+- Quero continuar aprendendo sobre manipulação de eventos
+- Quero continuar aprendendo sobre manipulação de datas
+- Quero continuar aprendendo sobre manipulação de arrays
+- Quero continuar aprendendo sobre manipulação de objetos
+- Quero continuar aprendendo sobre manipulação de funções
+
+## Melhorias na alicação
+
+1 - Registrar a lista do de voltas somente quando o botão iniciar tiver sido clicado, nesse momento está iniciando qundo clico no botão tempo(icone cronômetro).
+
+
+## Lista de possíveis implementações
+
+- [] colocar Darck/mode.
+- [] colocar um botão para mudar o tema.
+
 
 ###   Recursos úteis
 🔧

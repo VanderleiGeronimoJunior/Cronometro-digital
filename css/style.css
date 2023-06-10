@@ -121,6 +121,13 @@ body{
      
 }
 
+.voltar {
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
 
 
 /* #tempo{
@@ -159,12 +166,12 @@ body{
     color: #f1f1f1;
 }
 
-#resumeBtn{
+#continueBtn{
     background-color: #ff6d19;
     color: #f1f1f1;
 }
 
 #pauseBtn,
-#resumeBtn{
+#continueBtn{
     display: none;
 }

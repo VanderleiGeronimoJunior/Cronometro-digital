@@ -1,3 +1,4 @@
+// Cronômetro
 const minutesEL = document.querySelector("#minutes");
 const secondsEL = document.querySelector("#seconds");
 const milisecondsEL = document.querySelector("#miliseconds");
@@ -6,7 +7,7 @@ const separator = document.querySelector(".separator");
 // botões
 const starBtn = document.querySelector("#starBtn");
 const pauseBtn = document.querySelector("#pauseBtn");
-const resumeBtn = document.querySelector("#resumeBtn");
+const continueBtn = document.querySelector("#continueBtn");
 const resetBtn = document.querySelector("#resetBtn");
 const lapBtn = document.querySelector("#lapBtn");
 
@@ -14,21 +15,24 @@ const lapBtn = document.querySelector("#lapBtn");
 const tempo = document.querySelector("#tempo");
 
 tempo.style.display = "none";
+continueBtn.style.display = "none";
 
 let minutes = 0;
 let seconds = 0;
 let miliseconds = 0;
 let isPaused = false; // começa em pause
 let interval;
+let counter = 1;
 
 
 // temporizador
 
 starBtn.addEventListener("click", startTimer);
 pauseBtn.addEventListener("click", pauseTimer);
-resumeBtn.addEventListener("click", resumeTimer);
+continueBtn.addEventListener("click", resumeTimer);
 resetBtn.addEventListener("click", resetTimer);
-lapBtn.addEventListener("click", logTime);
+lapBtn.addEventListener("click", logTime,);
+
 
 
 
@@ -58,17 +62,18 @@ function startTimer(){
 
     starBtn.style.display = "none";
     pauseBtn.style.display = "block";
+    continueBtn.style.display = "none";
 }
 
 function pauseTimer(){
     isPaused = true;
     pauseBtn.style.display = "none";
-    resumeBtn.style.display = "block";
+    continueBtn.style.display = "block";
 }
 
 function resumeTimer(){
     isPaused = false;
-    resumeBtn.style.display = "none";    
+    continueBtn.style.display = "none";
     pauseBtn.style.display = "block";
 }
 
@@ -78,6 +83,7 @@ function resetTimer(){
     minutes = 0;
     seconds = 0;
     miliseconds = 0;
+    counter = 1;
 
     minutesEL.textContent = "00";
     secondsEL.textContent = "00";
@@ -86,7 +92,7 @@ function resetTimer(){
 
     starBtn.style.display = "block";
     pauseBtn.style.display = "none";
-    resumeBtn.style.display = "none";
+    continueBtn.style.display = "none";
     tempo.style.display = "none";
 }
 
@@ -101,19 +107,16 @@ function formatMiliseconds(time){
 
 
 
+
+
 function logTime() {
-    minutesEL.value;
-    secondsEL.value;
-    milisecondsEL.value;
-    separator.value;
+
     tempo.style.display = "block";
 
 
-    
     let lista  = document.getElementById("tempo").innerHTML;
-    lista = lista + `<li>
-    <p> volta : </p>
-
+    lista += `<li class = "volta">
+    <p id = "clicou" >Volta ${counter++} :</p>
 
 
     <span>
@@ -126,15 +129,29 @@ function logTime() {
     
     <br>`;
     
-    tempo.innerHTML = lista;    
+    tempo.innerHTML = lista;
+
+    let volta = document.querySelector(".volta");    
+
+    volta.style.display = "flex";
+    volta.style.justifyContent = "space-between";    
+    volta.style.alignItems = "center";
+    volta.style.padding = "1rem 1rem";
     
     
-    clearInterval(interval);
-    minutes = 0;
-    seconds = 0;
-    miliseconds = 0;
+    
+    clearTimer();
 
     startTimer();
     
+
+}
+
+function clearTimer(){
+    clearInterval(interval);
+    isPaused = false;
+    minutes = 0;
+    seconds = 0;
+    miliseconds = 0;
 }
 

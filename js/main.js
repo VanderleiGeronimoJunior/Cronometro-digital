@@ -131,20 +131,18 @@ function logTime() {
     
     tempo.innerHTML = lista;
 
-    let volta = document.querySelector(".volta");    
-
-    volta.style.display = "flex";
-    volta.style.justifyContent = "space-between";    
-    volta.style.alignItems = "center";
-    volta.style.padding = "1rem 1rem";
-    
-    
+    const volta = document.querySelectorAll(".volta");
+    volta.forEach( volta => {
+        volta.style.display = "flex";
+        volta.style.justifyContent = "space-between";    
+        volta.style.alignItems = "center";
+        volta.style.padding = "1rem 1rem";
+    });
     
     clearTimer();
 
     startTimer();
     
-
 }
 
 function clearTimer(){

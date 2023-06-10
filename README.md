@@ -69,6 +69,7 @@ HTML | CSS | JavaScript
 
 - [] colocar Darck/mode.
 - [] colocar um botão para mudar o tema.
+- [] Deixar responsivo.
 
 
 ###   Recursos úteis

@@ -1,5 +1,7 @@
 # Landing page para Eletricista
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/92c1beac-8934-4095-82f0-af67343ea67c/deploy-status)](https://app.netlify.com/sites/transcendent-yeot-2e0134/deploys)
+
 ##  📋 Índice
 
 
@@ -72,7 +74,8 @@ HTML | CSS | JavaScript
 ## Melhorias na alicação
 
 1 - Registrar a lista do de voltas somente quando o botão iniciar tiver sido clicado, nesse momento está iniciando qundo clico no botão tempo(icone cronômetro).
-2 - implementar a deferença entre cada volta e mostrar na lista.
+2 - Implementar a deferença entre cada volta e mostrar na lista.
+3 - Responsividade do cronômetro.
 
 
 ## Lista de possíveis implementações

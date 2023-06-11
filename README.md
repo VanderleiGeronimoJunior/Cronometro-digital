@@ -27,10 +27,10 @@
 1. Botão para iniciar o cronômetro.
 2. Botão para pausar o cronômetro.
 3. Botão para continuar o cronômetro.
-- [x] Botão para reiniciar o cronômetro.
-- [x] Botão para registrar o tempo(Icone cronômetro).
-- [x] Registrar o tempo de cada volta.
-- [x] Dark Theme.
+4. Botão para reiniciar o cronômetro.
+5. Botão para registrar o tempo(Icone cronômetro).
+6. Registrar o tempo de cada volta.
+7. Dark Theme.
 
 
 

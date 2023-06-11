@@ -72,6 +72,7 @@ HTML | CSS | JavaScript
 ## Melhorias na alicação
 
 1 - Registrar a lista do de voltas somente quando o botão iniciar tiver sido clicado, nesse momento está iniciando qundo clico no botão tempo(icone cronômetro).
+2 - implementar a deferença entre cada volta e mostrar na lista.
 
 
 ## Lista de possíveis implementações

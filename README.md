@@ -16,7 +16,7 @@
 
 ##  Sobre o Projeto
 
-
+    Nesse Projeto fiz uma implementação no Cronômetro do Hora de Codar, nele eu fiz um botão para resitrar o tempo em que um corredor ou uma carro de corrida faz uma volta, ao clicar no botão ele cria uma lista dinâmica com onumero da volta e o tempo que essa volta teve, também implementei o dark mode no projeto.
 
 
 ##  Objetivos
@@ -35,7 +35,6 @@
 7. Dark Theme.
 
 
-
 ## Captura de tela 
 📸
 
@@ -46,7 +45,9 @@
 <img style="width:600px" src="./assets/dark-theme.png" alt="modo escuro">
 
 
+## Demonstração
 
+[Link Demontração](https://cronometro-digital-2023.netlify.app/)
 
 
 ## Linguagens utilizadas
@@ -80,9 +81,7 @@ HTML | CSS | JavaScript
 
 ## Lista de possíveis implementações
 
-- [] colocar Darck/mode.
-- [] colocar um botão para mudar o tema.
-- [] Deixar responsivo.
+- [] Implementar a responsividade.
 
 
 ###   Recursos Úteis

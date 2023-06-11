@@ -57,7 +57,7 @@ HTML | CSS | JavaScript
 - Criar Layout de um Cronômetro.
 - trabalhar com setInterval, template string para inserir a lista de voltar na tela
 
-<img style="width:600px" src="./assets/lista-de-voltas.png" alt="lista de voltas modo escuro">
+<img style="width:250px" src="./assets/lista-de-voltas.png" alt="lista de voltas modo escuro">
 
 ### Desenvolvimento contínuo
 

@@ -38,10 +38,10 @@
 📸
 
 
-<img style="width:250px" src="./assets/ligth-theme.png" alt="modo claro">
+<img style="width:600px" src="./assets/ligth-theme.png" alt="modo claro">
 
 
-<img style="width:250px" src="./assets/dark-theme.png" alt="modo escuro">
+<img style="width:600px" src="./assets/dark-theme.png" alt="modo escuro">
 
 
 
@@ -57,7 +57,7 @@ HTML | CSS | JavaScript
 - Criar Layout de um Cronômetro.
 - trabalhar com setInterval, template string para inserir a lista de voltar na tela
 
-<img style="width:200px" src="./assets/lista-de-voltas.png" alt="lista de voltas modo escuro">
+<img style="width:600px" src="./assets/lista-de-voltas.png" alt="lista de voltas modo escuro">
 
 ### Desenvolvimento contínuo
 

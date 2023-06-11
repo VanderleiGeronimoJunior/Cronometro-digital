@@ -34,7 +34,7 @@
 .dark-mode:root{
     --color-body: #fafafa;
     --color-container: #f1f1f1;
-    --box-shadow-container: rgba(77,92,107,0.14);
+    --box-shadow-container: rgba(153,153,153,1);
     --color-ul-lista: #4d5c6b;
     /* Titulo */
     --color-h1: #175cff;
@@ -77,9 +77,9 @@ body{
     background-color: var(--color-container);
 
     /* box-shadow */
-    -webkit-box-shadow: 10px 10px 9px 0px rgba(77,92,107,0.14);
+    -webkit-box-shadow: 10px 10px 9px 0px rgba(77,92,107,0,14);
     -moz-box-shadow: 10px 10px 9px 0px rgba(77,92,107,0,14);
-    box-shadow: 10px 10px 9px 0px rgba(77,92,107,0.14);
+    box-shadow: 10px 10px 9px 0px var(--box-shadow-container);
 }
 
 

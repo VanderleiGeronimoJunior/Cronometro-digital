@@ -24,8 +24,11 @@
 
 ## Funcionalidades
 
-- [x] Botões de iniciar, pausar, continuar, reiniciar.
-- [x] Um botão para registrar o tempo.
+1. Botão para iniciar o cronômetro.
+2. Botão para pausar o cronômetro.
+3. Botão para continuar o cronômetro.
+- [x] Botão para reiniciar o cronômetro.
+- [x] Botão para registrar o tempo(Icone cronômetro).
 - [x] Registrar o tempo de cada volta.
 - [x] Dark Theme.
 
@@ -34,7 +37,12 @@
 ## Captura de tela 
 📸
 
-![cronometro](./assets/)
+
+<img style="width:250px" src="./assets/ligth-theme.png" alt="modo claro">
+
+
+<img style="width:250px" src="./assets/dark-theme.png" alt="modo escuro">
+
 
 
 
@@ -49,7 +57,7 @@ HTML | CSS | JavaScript
 - Criar Layout de um Cronômetro.
 - trabalhar com setInterval, template string para inserir a lista de voltar na tela
 
-![listaDeVoltas](./assets/)
+<img style="width:200px" src="./assets/lista-de-voltas.png" alt="lista de voltas modo escuro">
 
 ### Desenvolvimento contínuo
 
@@ -74,12 +82,12 @@ HTML | CSS | JavaScript
 
 
 ###   Recursos Úteis
-
+🔧
 - <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>
 
 ###   Créditos
-🔧
-- Hora de Codar
+
+- Matheus Battisti - Hora de Codar Peguei o cronômetro no canal do <a href="https://www.youtube.com/watch?v=SbST27OWpmo&t=13s">Youtube</a>  e inplementei a captura das voltas. 
 
 ##   Autor
 🧑‍💻

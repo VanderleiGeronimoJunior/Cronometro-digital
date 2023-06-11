@@ -119,6 +119,9 @@ function logTime() {
     <p id = "clicou" >Volta ${counter++} :</p>
 
 
+    
+
+
     <span>
     ${minutesEL.innerHTML}  ${separator.innerHTML}  ${secondsEL.innerHTML}  ${separator.innerHTML} 
     ${milisecondsEL.innerHTML}
@@ -142,7 +145,7 @@ function logTime() {
     clearTimer();
 
     startTimer();
-    
+
 }
 
 function clearTimer(){

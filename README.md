@@ -27,6 +27,7 @@
 - [x] Botões de iniciar, pausar, continuar, reiniciar.
 - [x] Um botão para registrar o tempo.
 - [x] Registrar o tempo de cada volta.
+- [x] Dark Theme.
 
 
 
@@ -72,9 +73,13 @@ HTML | CSS | JavaScript
 - [] Deixar responsivo.
 
 
-###   Recursos úteis
-🔧
+###   Recursos Úteis
 
+- <a href="https://icons.getbootstrap.com/">Bootstrap Icons</a>
+
+###   Créditos
+🔧
+- Hora de Codar
 
 ##   Autor
 🧑‍💻
